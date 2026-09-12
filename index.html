@@ -480,19 +480,37 @@
     background: #159447;
 }
 
-/* MOBILE */
-@media(max-width:900px) {
+/* ================= MOBILE VIEW ================= */
 
+@media (max-width: 900px) {
+
+    .sgsh-container {
+        width: 94%;
+    }
+
+    /* Header */
+    .sgsh-nav {
+        min-height: 75px;
+        padding: 8px 0;
+    }
+
+    .sgsh-logo img {
+        width: 150px;
+        max-height: 65px;
+    }
+
+    /* Mobile Menu */
     .sgsh-menu {
         display: none;
         position: absolute;
-        top: 85px;
+        top: 75px;
         left: 0;
         width: 100%;
         background: white;
         flex-direction: column;
-        padding: 25px;
-        box-shadow: 0 10px 20px rgba(0,0,0,.1);
+        padding: 25px 20px;
+        gap: 18px;
+        box-shadow: 0 10px 20px rgba(0,0,0,.12);
     }
 
     .sgsh-menu.active {
@@ -501,55 +519,168 @@
 
     .sgsh-menu-toggle {
         display: block;
+        font-size: 32px;
     }
 
-    .sgsh-hero-content,
-    .sgsh-about-grid,
-    .sgsh-contact-grid {
-        grid-template-columns: 1fr;
-    }
-
+    /* Hero */
     .sgsh-hero {
-        padding: 60px 0;
+        padding: 55px 0;
     }
 
-    .sgsh-hero h1 {
-        font-size: 40px;
-    }
-
-    .sgsh-service-grid,
-    .sgsh-why-grid {
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .sgsh-footer-grid {
+    .sgsh-hero-content {
         grid-template-columns: 1fr;
-    }
-}
-
-@media(max-width:600px) {
-
-    .sgsh-service-grid,
-    .sgsh-treatment-grid,
-    .sgsh-why-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .sgsh-doctor-card {
-        grid-template-columns: 1fr;
+        gap: 35px;
         text-align: center;
     }
 
+    .sgsh-hero h1 {
+        font-size: 42px;
+    }
+
+    .sgsh-hero p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .sgsh-hero-buttons {
+        justify-content: center;
+    }
+
+    .sgsh-hero-image img {
+        max-width: 100%;
+    }
+
+    /* About */
+    .sgsh-about-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    /* Services */
+    .sgsh-service-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .sgsh-service-card {
+        padding: 30px 20px;
+        min-height: 300px;
+    }
+
+    /* WHY US */
+    .sgsh-why-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .sgsh-why-card {
+        padding: 30px 20px;
+        min-height: 220px;
+    }
+
+    /* Treatments */
+    .sgsh-treatment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact */
+    .sgsh-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    /* Footer */
+    .sgsh-footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .sgsh-container {
+        width: 94%;
+    }
+
     .sgsh-section {
-        padding: 60px 0;
+        padding: 55px 0;
+    }
+
+    .sgsh-section-title {
+        margin-bottom: 35px;
     }
 
     .sgsh-section-title h2 {
-        font-size: 30px;
+        font-size: 32px;
+    }
+
+    .sgsh-section-title p {
+        font-size: 16px;
     }
 
     .sgsh-hero h1 {
-        font-size: 34px;
+        font-size: 38px;
+    }
+
+    .sgsh-hero p {
+        font-size: 16px;
+    }
+
+    /* Bigger service cards */
+    .sgsh-service-card {
+        padding: 35px 22px;
+        min-height: 320px;
+    }
+
+    .sgsh-service-card h3 {
+        font-size: 23px;
+    }
+
+    .sgsh-service-card p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    /* Bigger service image */
+    .sgsh-icon {
+        width: 200px;
+        height: 140px;
+        margin-bottom: 22px;
+    }
+
+    /* Bigger WHY US cards */
+    .sgsh-why-card {
+        padding: 35px 20px;
+        min-height: 230px;
+    }
+
+    .sgsh-why-card h3 {
+        font-size: 22px;
+    }
+
+    .sgsh-why-card p {
+        font-size: 16px;
+    }
+
+    /* Doctor */
+    .sgsh-doctor-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 25px 18px;
+    }
+
+    .sgsh-doctor-photo {
+        width: 190px;
+        height: 190px;
+    }
+
+    /* Buttons */
+    .sgsh-btn {
+        padding: 13px 25px;
+        font-size: 16px;
     }
 }
 </style>
